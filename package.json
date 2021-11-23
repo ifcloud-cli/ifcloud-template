@@ -1,0 +1,28 @@
+{
+  "name": "@ifcloud/ifcloud-template",
+  "version": "1.0.1",
+  "description": "> TODO: description",
+  "author": "aidening<aiden_xiong@163.com>",
+  "homepage": "",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com/ifcloud-cli/ifcloud-template.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1",
+    "build": "rimraf -rf lib && cross-env BABEL_ENV=publish babel src --root-mode upward -D -d lib"
+  },
+  "dependencies": {}
+}
